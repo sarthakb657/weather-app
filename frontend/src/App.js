@@ -18,7 +18,7 @@ function App() {
       return;
     }
     try {
-      const response = await axios.get(`http://localhost:3005/weather/${city}`);
+      const response = await axios.get(`https://weather-app-backend-7zbu.onrender.com/weather/${city}`);
       setWeather(response.data);
     } catch (error) {
       console.error('Error fetching weather data:', error);
