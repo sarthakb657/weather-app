@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 
 // Use CORS to allow requests from your frontend
-app.use(cors());
+app.use(cors({ origin: '*' }));
 
 // API route to fetch weather data
 app.get('/weather/:city', async (req, res) => {
